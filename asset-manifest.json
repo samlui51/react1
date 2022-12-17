@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/react1/static/css/main.b076063b.css",
-    "main.js": "/react1/static/js/main.2f9a263d.js",
+    "main.css": "/react1/static/css/main.21135583.css",
+    "main.js": "/react1/static/js/main.1831eef5.js",
+    "static/media/星期三.jpeg": "/react1/static/media/星期三.34290a3e64d0e943766e.jpeg",
+    "static/media/First Love 初戀.jpeg": "/react1/static/media/First Love 初戀.38066bade73f3b40ec8f.jpeg",
     "static/media/Netflix_2015_logo.svg": "/react1/static/media/Netflix_2015_logo.5787551b8de42aef368c379572555ada.svg",
     "index.html": "/react1/index.html",
-    "main.b076063b.css.map": "/react1/static/css/main.b076063b.css.map",
-    "main.2f9a263d.js.map": "/react1/static/js/main.2f9a263d.js.map"
+    "main.21135583.css.map": "/react1/static/css/main.21135583.css.map",
+    "main.1831eef5.js.map": "/react1/static/js/main.1831eef5.js.map"
   },
   "entrypoints": [
-    "static/css/main.b076063b.css",
-    "static/js/main.2f9a263d.js"
+    "static/css/main.21135583.css",
+    "static/js/main.1831eef5.js"
   ]
 }
