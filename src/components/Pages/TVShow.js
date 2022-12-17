@@ -1,8 +1,118 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./TVShow.css";
+import CategoryPrograms from "../CategoryPrograms/CategoryPrograms";
+
+const TV_CATEGORIES = [
+  {
+    title: "週末追劇首選",
+    programs: [
+      {
+        title: "星期三",
+        id: 1,
+        img: require("../../assets/programs/星期三.jpeg"),
+      },
+      {
+        title: "First Love 初戀",
+        id: 2,
+        img: require("../../assets/programs/First Love 初戀.jpeg"),
+      },
+      {
+        title: "星期三",
+        id: 3,
+        img: require("../../assets/programs/星期三.jpeg"),
+      },
+      {
+        title: "First Love 初戀",
+        id: 4,
+        img: require("../../assets/programs/First Love 初戀.jpeg"),
+      },
+      {
+        title: "星期三",
+        id: 5,
+        img: require("../../assets/programs/星期三.jpeg"),
+      },
+      {
+        title: "First Love 初戀",
+        id: 6,
+        img: require("../../assets/programs/First Love 初戀.jpeg"),
+      },
+      {
+        title: "星期三",
+        id: 7,
+        img: require("../../assets/programs/星期三.jpeg"),
+      },
+      {
+        title: "First Love 初戀",
+        id: 8,
+        img: require("../../assets/programs/First Love 初戀.jpeg"),
+      },
+    ],
+  },
+  {
+    title: "備受讚譽的節目",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "最新發行",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "華語節目",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "熱門選擇",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "韓劇",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "獲獎肯定的節目",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "過去一年推出的影片",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "西洋節目",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "國際節目",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "懸疑節目",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "韓國浪漫節目",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "親子節目",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+  {
+    title: "緊張刺激的節目",
+    programs: [{ title: "星期三", id: 1, img: "" }],
+  },
+];
 
 const TVShow = () => {
+  const catProgs = TV_CATEGORIES.map((category, index) => {
+    return (
+      <CategoryPrograms
+        key={index}
+        title={category.title}
+        programs={category.programs}
+      ></CategoryPrograms>
+    );
+  });
   return (
     <React.Fragment>
       <Header></Header>
@@ -15,6 +125,7 @@ const TVShow = () => {
             </div>
           </div>
         </div>
+        {catProgs}
       </div>
     </React.Fragment>
   );

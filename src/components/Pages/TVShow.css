@@ -2,7 +2,6 @@
   background-color: rgb(24, 24, 24);
   width: 100%;
   color: white;
-  height: 100vh;
 }
 
 .top {
@@ -12,7 +11,7 @@
 .description {
   padding: 50px 0 25px 0;
   height: 200px;
-  width: 40%;
+  width: 600px;
 }
 
 .description .title {

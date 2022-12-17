@@ -1,0 +1,53 @@
+.title {
+  padding: 5px 40px;
+  font-size: 1.2rem;
+}
+
+.category {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.program {
+  width: 300px;
+  margin: 5px 12px 5px 0;
+  flex-shrink: 0;
+}
+
+.thumbnail {
+  width: 100%;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  max-width: 100%;
+}
+
+.programs {
+  display: flex;
+  flex-wrap: no-wrap;
+  width: calc(100%-80px);
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: no-wrap;
+}
+
+.programs::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.arrow {
+  color: rgb(205, 46, 37);
+  font-size: 1.2rem;
+  min-width: 40px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
