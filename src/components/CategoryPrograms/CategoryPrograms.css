@@ -50,4 +50,13 @@
   align-items: center;
   display: flex;
   cursor: pointer;
+  padding: 0 10px;
+}
+
+.arrow.left {
+    justify-content: flex-end;
+}
+
+.arrow.right {
+    justify-content: flex-start;
 }

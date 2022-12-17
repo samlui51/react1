@@ -7,9 +7,32 @@ const CategoryPrograms = (props) => {
 
   useEffect(() => {
     const cat = document.getElementById(props.title);
-    console.log(cat.scrollWidth, cat.clientWidth);
-    // if (cat.scrollWidth)
+    if (cat.scrollLeft > 0 && cat.scrollWidth > cat.clientWidth)
+      setDisplayLeftArrow(true);
+    if (
+      cat.scrollWidth > cat.clientWidth &&
+      cat.scrollLeft !== cat.scrollWidth - cat.clientWidth
+    )
+      setDisplayRightArrow(true);
+    cat.addEventListener("scroll", () => {
+      cat.scrollLeft > 0
+        ? setDisplayLeftArrow(true)
+        : setDisplayLeftArrow(false);
+      cat.scrollLeft === cat.scrollWidth - cat.clientWidth
+        ? setDisplayRightArrow(false)
+        : setDisplayRightArrow(true);
+    });
   }, [props.title]);
+
+  const leftArrowHandler = () => {
+    const cat = document.getElementById(props.title);
+    cat.scrollBy({left: -700, behavior: 'smooth'})
+  };
+
+  const rightArrowHandler = () => {
+    const cat = document.getElementById(props.title);
+    cat.scrollBy({left: 700, behavior: 'smooth'})
+  };
 
   const programs = props.programs.map((program) => {
     return (
@@ -27,13 +50,15 @@ const CategoryPrograms = (props) => {
         <div>{props.title}</div>
       </div>
       <div className="container">
-      <div className="arrow">&#60;</div>
-        {/* <div className="arrow">{displayLeftArrow && <span>&#60;</span>}</div> */}
+        <div className="arrow left">
+          {displayLeftArrow && <span onClick={leftArrowHandler}>&#60;</span>}
+        </div>
         <div id={props.title} className="programs">
           {programs}
         </div>
-        <div className="arrow">&#62;</div>
-        {/* <div className="arrow">{displayRightArrow && <span>&#62;</span>}</div> */}
+        <div className="arrow right">
+          {displayRightArrow && <span onClick={rightArrowHandler}>&#62;</span>}
+        </div>
       </div>
     </div>
   );
