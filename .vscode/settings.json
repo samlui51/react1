@@ -1,0 +1,17 @@
+{
+    "restoreTerminals.terminals": [
+        {
+            "splitTerminals": [
+              {
+                "name": "start",
+                "commands": ["npm start"],
+                "shouldRunCommands": true
+              },
+              {
+                "name": "blank",
+                "shouldRunCommands": false
+              }
+            ]
+        }
+    ]
+}

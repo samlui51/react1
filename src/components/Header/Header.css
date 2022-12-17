@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  background-color: black;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.text1 {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  height: 100%;
+}
+
+.buttons .button {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.red-button {
+  width: 115px;
+  text-align: center;
+  background-color: rgb(205, 46, 37);
+  cursor: pointer;
+}
+
+.normal-button {
+  border: 1px solid rgb(150, 150, 150);
+  width: 70px;
+  cursor: pointer;
+}
+
+.red-button:hover {
+  filter: brightness(1.1);
+}
+
+.normal-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
