@@ -5,8 +5,12 @@
   height: 100vh;
 }
 
+.top {
+  padding: 0 40px;
+}
+
 .description {
-  padding: 50px 40px 25px 40px;
+  padding: 50px 0 25px 0;
   height: 200px;
   width: 40%;
 }
