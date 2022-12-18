@@ -4,9 +4,10 @@ import smallNetflix from "../../assets/header/netflix-1-logo-svgrepo-com.svg";
 import { useEffect, useState } from "react";
 
 const Header = () => {
-  const [imgSrc, setImgSrc] = useState(netflix);
+  const [imgSrc, setImgSrc] = useState("");
 
   useEffect(() => {
+    updateSrc();
     window.addEventListener("resize", updateSrc);
   }, []);
 

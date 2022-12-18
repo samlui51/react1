@@ -26,12 +26,12 @@ const CategoryPrograms = (props) => {
 
   const leftArrowHandler = () => {
     const cat = document.getElementById(props.title);
-    cat.scrollBy({left: -700, behavior: 'smooth'})
+    cat.scrollBy({ left: -700, behavior: "smooth" });
   };
 
   const rightArrowHandler = () => {
     const cat = document.getElementById(props.title);
-    cat.scrollBy({left: 700, behavior: 'smooth'})
+    cat.scrollBy({ left: 700, behavior: "smooth" });
   };
 
   const programs = props.programs.map((program) => {
@@ -51,13 +51,13 @@ const CategoryPrograms = (props) => {
       </div>
       <div className="container">
         <div className="arrow left">
-          {displayLeftArrow && <span onClick={leftArrowHandler}>&#60;</span>}
+          {displayLeftArrow && <span className="mobile-hidden" onClick={leftArrowHandler}>&#60;</span>}
         </div>
         <div id={props.title} className="programs">
           {programs}
         </div>
         <div className="arrow right">
-          {displayRightArrow && <span onClick={rightArrowHandler}>&#62;</span>}
+          {displayRightArrow && <span className="mobile-hidden" onClick={rightArrowHandler}>&#62;</span>}
         </div>
       </div>
     </div>
