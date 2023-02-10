@@ -22,7 +22,7 @@ const Header = () => {
         <img src={imgSrc} alt="logo" />
       </div>
       <div className="text1 buttons">
-        <div className="button mobile-hidden">不限時數的節目與電影</div>
+        <div className="button mobile-hidden">不限時數的節目與電影1</div>
         <div className="button red-button">立即加入</div>
         <div className="button normal-button">登入</div>
       </div>
